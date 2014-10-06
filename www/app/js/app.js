@@ -20,7 +20,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
     .state('tab', {
       url: '/tab',
       abstract: true,
-      templateUrl: 'templates/tabs.html'
+      templateUrl: '/app/templates/tabs.html'
     })
 
     // the pet tab has its own child nav-view and history
@@ -28,7 +28,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/pets',
       views: {
         'pets-tab': {
-          templateUrl: 'templates/pet-index.html',
+          templateUrl: '/app/templates/pet-index.html',
           controller: 'PetIndexCtrl'
         }
       }
@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/pet/:petId',
       views: {
         'pets-tab': {
-          templateUrl: 'templates/pet-detail.html',
+          templateUrl: '/app/templates/pet-detail.html',
           controller: 'PetDetailCtrl'
         }
       }
@@ -48,7 +48,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/adopt',
       views: {
         'adopt-tab': {
-          templateUrl: 'templates/adopt.html'
+          templateUrl: '/app/templates/adopt.html'
         }
       }
     })
@@ -57,7 +57,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/about',
       views: {
         'about-tab': {
-          templateUrl: 'templates/about.html'
+          templateUrl: '/app/templates/about.html'
         }
       }
     });
